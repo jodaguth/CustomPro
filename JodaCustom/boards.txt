@@ -1,0 +1,93 @@
+menu.cpu=Processor
+
+
+Pro.name=Arduino Pro
+Pro.upload.tool=avrdude
+Pro.upload.maximum_data_size=2048
+Pro.bootloader.tool=avrdude
+Pro.bootloader.unlock_bits=0xff
+Pro.bootloader.lock_bits=0xcf
+Pro.build.core=MCUdude_corefiles
+Pro.build.board=AVR_ATmega328
+Pro.build.bootloader_led=B5
+Pro.build.extra_flags={build.clkpr}
+
+
+## Arduino Pro (5V, 20MHZ) w/ATmega328P
+## ------------------------------------
+
+Pro.menu.cpu.pro20MHz=ATmega328P (5V, 20 MHz)
+
+# UART
+#-----
+Pro.menu.cpu.pro20MHz.upload.maximum_size=32256
+Pro.menu.cpu.pro20MHz.upload.protocol=arduino
+Pro.menu.cpu.pro20MHz.upload.port=UART0
+Pro.menu.cpu.pro20MHz.build.export_merged_output=true
+Pro.menu.cpu.pro20MHz.bootloader.high_fuses=0b1101{bootloader.eesave_bit}110
+Pro.menu.cpu.pro20MHz.bootloader.file=optiboot_flash/bootloaders/{build.mcu}/{build.clock_speed}/optiboot_flash_{build.mcu}_{upload.port}_{upload.speed}_{build.clock_speed}_{build.bootloader_led}.hex
+
+# EPROM
+#------
+Pro.menu.cpu.pro20MHz.bootloader.eesave_bit=0
+
+# Variant
+#--------
+Pro.menu.cpu.pro20MHz.bootloader.cksel_bits=0111
+Pro.menu.cpu.pro20MHz.bootloader.cfd_bit=1
+Pro.menu.cpu.pro20MHz.build.variant=standard
+Pro.menu.cpu.pro20MHz.build.mcu=atmega328p
+
+# Brown Out Detection
+#--------------------
+Pro.menu.cpu.pro20MHz.bootloader.extended_fuses=0b1111{bootloader.cfd_bit}101
+
+# Compiler Link
+#--------------
+Pro.menu.cpu.pro20MHz.compiler.c.extra_flags=
+Pro.menu.cpu.pro20MHz.compiler.c.elf.extra_flags=
+Pro.menu.cpu.pro20MHz.compiler.cpp.extra_flags=
+Pro.menu.cpu.pro20MHz.ltoarcmd=avr-ar
+
+# Clock Frequency
+#----------------
+Pro.menu.cpu.pro20MHz.upload.speed=115200
+Pro.menu.cpu.pro20MHz.bootloader.low_fuses=0b1111{bootloader.cksel_bits}
+Pro.menu.cpu.pro20MHz.build.clkpr=
+Pro.menu.cpu.pro20MHz.build.clock_speed={build.f_cpu}
+Pro.menu.cpu.pro20MHz.build.f_cpu=20000000L
+
+## Arduino Pro (5V, 20MHZ) w/ATmega328P
+## ------------------------------------
+Pro.menu.cpu.pro16MHz=ATmega328P (5V, 16 MHz)
+
+# UART
+#-----
+Pro.menu.cpu.pro16MHz.upload.maximum_size=32256
+Pro.menu.cpu.pro16MHz.upload.protocol=arduino
+Pro.menu.cpu.pro16MHz.upload.port=UART0
+Pro.menu.cpu.pro16MHz.build.export_merged_output=true
+Pro.menu.cpu.pro16MHz.bootloader.high_fuses=0b1101{bootloader.eesave_bit}110
+Pro.menu.cpu.pro16MHz.bootloader.file=optiboot_flash/bootloaders/{build.mcu}/{build.clock_speed}/optiboot_flash_{build.mcu}_{upload.port}_{upload.speed}_{build.clock_speed}_{build.bootloader_led}.hex
+
+# EPROM
+#------
+Pro.menu.cpu.pro16MHz.bootloader.eesave_bit=0
+
+# Variant
+#--------
+Pro.menu.cpu.pro16MHz.bootloader.cksel_bits=0111
+Pro.menu.cpu.pro16MHz.bootloader.cfd_bit=1
+Pro.menu.cpu.pro16MHz.build.variant=standard
+Pro.menu.cpu.pro16MHz.build.mcu=atmega328p
+
+# Brown Out Detection
+#--------------------
+Pro.menu.cpu.pro16MHz.bootloader.extended_fuses=0b1111{bootloader.cfd_bit}101
+
+# Compiler Link
+#--------------
+Pro.menu.cpu.pro16MHz.compiler.c.extra_flags=
+Pro.menu.cpu.pro16MHz.compiler.c.elf.extra_flags=
+Pro.menu.cpu.pro16MHz.compiler.cpp.extra_flags=
+Pro.menu.cpu.pro16MHz.ltoarcmd=avr-ar
