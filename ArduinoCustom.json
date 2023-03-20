@@ -14,8 +14,8 @@
           "architecture": "avr",
           "version": "2.2.1",
           "category": "Contributed",
-          "url": "https://github.com/jodaguth/CustomPro/releases/download/V1/CustomPro.zip",
-          "archiveFileName": "CustomPro.zip",
+          "url": "https://github.com/jodaguth/CustomPro/raw/master/JodaCustom.zip",
+          "archiveFileName": "JodaCustom.zip",
           "boards": [
             {
               "name": "ATmega328/P/PA/A/PB"
