@@ -16,6 +16,8 @@
             "category": "Contributed",
             "url": "https://github.com/jodaguth/CustomPro/releases/download/V1/CustomPro.zip",
             "archiveFileName": "CustomPro.zip",
+            "checksum": "null",
+            "size": "null",
             "boards": [
               {
                 "name": "ATmega328/P/PA/A/PB"
