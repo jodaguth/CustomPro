@@ -1,7 +1,7 @@
 menu.cpu=Processor
 
 
-Pro.name=Arduino Pro
+Pro.name=ATmega328
 Pro.upload.tool=avrdude
 Pro.upload.maximum_data_size=2048
 Pro.bootloader.tool=avrdude
