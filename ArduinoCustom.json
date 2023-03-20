@@ -3,8 +3,8 @@
       {
         "name": "ProCustom",
         "maintainer": "JODA",
-        "websiteURL": "",
-        "email": "",
+        "websiteURL": "null",
+        "email": "null",
         "help": {
           "online": "https://forum.arduino.cc/index.php?topic=412070"
         },
