@@ -1,7 +1,7 @@
 {
   "packages": [
     {
-      "name": "ProCustom",
+      "name": "JodaCustom",
       "maintainer": "JODA",
       "websiteURL": "",
       "email": "",
@@ -10,7 +10,7 @@
       },
       "platforms": [
         {
-          "name": "ProCustom",
+          "name": "JodaCustom",
           "architecture": "avr",
           "version": "2.2.1",
           "category": "Contributed",
